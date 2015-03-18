@@ -1,16 +1,16 @@
-# Ebanx
+# EBANX
+Gem to communicate with EBANX.
 
-TODO: Write a gem description
+Documentation: https://developers.ebanx.com/
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile, and bundle it:
 
-    gem 'ebanx'
-
-And then execute:
-
-    $ bundle
+```
+gem 'ebanx'
+$ bundle
+```
 
 Or install it yourself as:
 
