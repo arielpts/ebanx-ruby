@@ -6,7 +6,8 @@ require 'minitest/pride'
 class MiniTest::Spec
   def ebanx
     Ebanx.tap do |e|
-      e.integration_key = '1231000'
+      # Merchant "Automated Testing"
+      e.integration_key = 'f2bb784c3b422874672fe1342a9be8b98134682e1ae4d3a228489c2628e36eaaa256cf3862b419dc4c5d12cd6733468aa4ba'
       e.test_mode       = true
     end
   end
