@@ -14,6 +14,7 @@ require_relative 'ebanx/command/refund_or_cancel'
 require_relative 'ebanx/command/request'
 require_relative 'ebanx/command/token'
 require_relative 'ebanx/command/zipcode'
+require_relative 'ebanx/command/direct'
 
 module Ebanx
   @test_mode = false

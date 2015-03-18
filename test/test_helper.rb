@@ -2,6 +2,7 @@ require 'ebanx'
 require 'minitest/autorun'
 require 'minitest/spec'
 require 'minitest/pride'
+require 'pry'
 
 class MiniTest::Spec
   def ebanx
