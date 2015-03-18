@@ -46,7 +46,10 @@ module Ebanx
 
   def self.request(command)
     uri = Ebanx::base_uri + command.request_action
-    response = RestClient.send command.request_method, uri, params: command.params, content_type: command.response_type
+    case command.request_method
+      when :post then response = RestClient.post uri, command.params, content_type: command.response_type
+      when :get  then response = RestClient.get uri, params: command.params
+    end
     Ebanx::Response.new response, command.response_type
   end
 
